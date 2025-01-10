@@ -8,6 +8,8 @@
 body,html{
     width: 100%;
     height: 100%;
+    /* background-color: #f8f8f8; */
+
 }
 .main{
     width: 100%;
@@ -35,7 +37,7 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: 600;
     border-right: 2px solid black;
    
@@ -47,9 +49,9 @@ body,html{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    /* font-size: 25px; */
     font-family: monument;
-    font-size: 45px;
+    font-size: 3vw;
     letter-spacing: -1.2px;
 }
 .nav h2:nth-last-child(1){
@@ -94,7 +96,7 @@ body,html{
 }
 .over1 h1{
     font-family:monument;
-    font-size: 60px;
+    font-size: 3.5vw;
     color: #fff;
 }
 .over1 h2{
@@ -108,6 +110,7 @@ body,html{
     align-items: center;
     justify-content: center;
     border-bottom: 5px solid #fff;
+    font-size: 1.5vw;
 }
 .over2{
     display: flex;
@@ -115,6 +118,200 @@ body,html{
     justify-content: space-between;
 }
 .over2 h4{
-    font-size: 30px;
+    font-size: 1.5vw;
     color: #fff;
+}
+.scroll{
+    width: 100%;
+    height: 25vh;
+    background-color: #f8f8f8;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.img-container{
+    width:160%;
+    height: 90%;
+    /* background-color: yellow; */
+    display: inline-block;
+    animation-name: scroll-anim;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+.img-container img{
+    margin: 1vw;
+    width: 7%;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 100%;
+    object-position:top;
+    object-fit: cover;
+}
+@keyframes scroll-anim{
+    from{
+        transform: translateX(0%);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+.page-2{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+.alphabet{
+    width: 100vw;
+    height: 8vh;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    margin-top: 1.5vw;
+}
+.alphabet h5{
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: 2vw;
+    border-bottom: 2px solid black;
+    cursor: pointer;    
+}
+.alphabet h6{
+    font-size: 1.2vw;
+    font-weight: 500;
+    padding: 0.5vw 0.9vw;
+    border-radius: 50%;
+    font-style: italic;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all ease 0.2s;
+}
+.alphabet h6:hover{
+    border: 1px solid black;
+}
+.part2-img{
+    width: 100%;
+    height: 92%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 4.5vw;
+}
+.img1{
+    width: 47vw;
+    height:100%
+}
+.img1 img{
+    width: 100%;
+    height: 89%;
+    object-fit: cover;
+    object-position: 20%;
+}
+.img1 h1{
+    font-family: monument;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1.5vh;
+}
+.img2   {
+    width: 40vw;
+    height:100%
+}
+.img2 img{
+    width: 100%;
+    height: 62%;
+    object-fit: cover;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.text h2{
+    font-size: 30px;
+}
+.text h5{
+    font-size: 20px;
+}
+.page3{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+}
+.top{
+    width: 100%;
+    height: 60%;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 7vw;
+    position: relative;
+    /* background-color: red; */
+}
+.left{
+    width: 30vw;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.left img{
+    margin-left: 2.5vw;
+    width: 85%;
+    height: 100%;
+}
+#arrow{
+    width: 5%;
+    height: 10%;
+    /* background-color: red; */
+    position: absolute;
+    top: 39%;
+    left: 17.5%;
+}
+.left h2{
+    padding-left: 2vw;
+    position: absolute;
+    bottom: 10%;
+    font-size: 1.5vw;
+}
+.right{
+    width: 50vw;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.botoom{
+    width: 100%;
+    height: 40%;
+    /* background-color: yellow; */
+    padding: 0 5.8vw;
+    position: relative;
+}
+.botoom h2{
+    position: absolute;
+    top: 9%;
+    right: 9%;
+    font-size: 2vw;
+    font-weight: 400;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.botoom img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
 }
