@@ -96,7 +96,7 @@ body,html{
 }
 .over1 h1{
     font-family:monument;
-    font-size: 3.5vw;
+    font-size: 60px;
     color: #fff;
 }
 .over1 h2{
@@ -110,7 +110,6 @@ body,html{
     align-items: center;
     justify-content: center;
     border-bottom: 5px solid #fff;
-    font-size: 1.5vw;
 }
 .over2{
     display: flex;
@@ -118,7 +117,7 @@ body,html{
     justify-content: space-between;
 }
 .over2 h4{
-    font-size: 1.5vw;
+    font-size: 30px;
     color: #fff;
 }
 .scroll{
@@ -162,7 +161,7 @@ body,html{
     background-color: #f8f8f8;
 }
 .alphabet{
-    width: 100vw;
+    width: 100%;
     height: 8vh;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -182,7 +181,7 @@ body,html{
     cursor: pointer;    
 }
 .alphabet h6{
-    font-size: 1.2vw;
+    font-size: 18px;
     font-weight: 500;
     padding: 0.5vw 0.9vw;
     border-radius: 50%;
